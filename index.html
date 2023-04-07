@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Github User Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-zinc-900">
+    <div class="max-w-800 mx-auto p-20 text-center">
+      <h1 class="text-4xl mb-20 text-white">Github User Search</h1>
+      <form id="search-form" class="flex justify-center mb-20">
+        <input
+          class="w-3/5 text-xl px-5 py-2 border-2 border-gray-400 rounded-md mr-5"
+          type="text"
+          id="username-input"
+          placeholder="Enter a Github username"
+        />
+        <button
+          class="text-xl px-5 py-2 border-none rounded-md bg-blue-500 text-white cursor-pointer hover:bg-blue-600"
+          type="submit"
+        >
+          Search
+        </button>
+      </form>
+      <div id="user-info" class="flex flex-wrap justify-center gap-20"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
